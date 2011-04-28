@@ -28,8 +28,10 @@ EOpenID class extends from CBaseUserIdentity and implements the OpenID protocol 
 
 ###Usage
 The action:
+
 ~~~
 [php]
+
     public function actionOpenIDLogin() {
         $openid=new EOpenID;
 
@@ -45,12 +47,15 @@ The action:
 
         $this->render('openIDLogin',array('openid'=>$openid));
     }
+
 ~~~
 
 
 The view:
+
 ~~~
 [php]
+
 <div class="form">
 <?php echo CHtml::beginForm(); ?>
 
@@ -68,6 +73,7 @@ The view:
 
 <?php echo CHtml::endForm(); ?>
 </div><!-- form -->
+
 ~~~
 
 ##Change Log
