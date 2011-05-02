@@ -69,7 +69,7 @@ class EOpenID extends CBaseUserIdentity
 
     function __construct()
     {
-        $this->trustRoot = ($_SERVER['HTTPS']=='on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
+        $this->trustRoot = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
         $this->returnUrl = $this->trustRoot . $_SERVER['REQUEST_URI'];
 
         if (!function_exists('curl_exec')) {
@@ -110,9 +110,11 @@ class EOpenID extends CBaseUserIdentity
     public function getName(){
         $info=$this->attributes;
 
-        foreach(array('nickname','email','fullname') as $attribute)
-            if ($info->$attribute)
-                    return $info->$attribute;
+        foreach(array('nickname','email','fullname') as $attribute){
+            if (isset($info->$attribute)){
+		    return $info->$attribute;
+		}
+	}
 
     }
 
