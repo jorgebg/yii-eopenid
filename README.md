@@ -6,6 +6,8 @@ The extension was released under the [MIT license](http://www.opensource.org/lic
 
 [https://github.com/jorgebg/yii-eopenid](https://github.com/jorgebg/yii-eopenid)
 
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=jorgebg&url=https://github.com/jorgebg/yii-eopenid&title=yii-eopenid&language=en_GB&tags=github&category=software) 
+
 Introduction
 ------------
 EOpenID class extends from CBaseUserIdentity and implements the OpenID protocol to authenticate a user. Based on **Mewp's [LightOpenID](http://gitorious.org/lightopenid)** class.
