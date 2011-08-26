@@ -1,23 +1,13 @@
-Last news
----------
-Some time ago I developed this extension for [InDaHouseRulez SL](http://www.indahouserulez.com). I no longer work there, but I still support the extension.
-
-The extension was released under the [MIT license](http://www.opensource.org/licenses/mit-license.php), so I made a fork on [GitHub](https://github.com), where you'll find the latest version:
-
-[https://github.com/jorgebg/yii-eopenid](https://github.com/jorgebg/yii-eopenid)
-
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=jorgebg&url=https://github.com/jorgebg/yii-eopenid&title=yii-eopenid&language=en_GB&tags=github&category=software) 
-
 Introduction
 ------------
 EOpenID class extends from CBaseUserIdentity and implements the OpenID protocol to authenticate a user. Based on **Mewp's [LightOpenID](http://gitorious.org/lightopenid)** class.
 
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=jorgebg&url=https://github.com/jorgebg/yii-eopenid&title=yii-eopenid&language=en_GB&tags=github&category=software) 
 
 ###Resources
 * [InDaHouseRulez SL](http://www.indahouserulez.com)
 * [OpenID](http://openid.net/)
 * [LightOpenID](http://gitorious.org/lightopenid)
-
 
 
 ##Documentation
@@ -78,6 +68,15 @@ The view:
 
 ~~~
 
+License
+---------
+Some time ago I developed this extension for [InDaHouseRulez SL](http://www.indahouserulez.com). I no longer work there, but I still support the extension.
+
+The extension was released under the [MIT license](http://www.opensource.org/licenses/mit-license.php), so I made a fork on [GitHub](https://github.com), where you'll find the latest version:
+
+[https://github.com/jorgebg/yii-eopenid](https://github.com/jorgebg/yii-eopenid)
+
+
 ##Change Log
 
 ###November 2, 2010
@@ -89,3 +88,4 @@ The view:
 ###July 28, 2010
 * Renamed as EOpenID.
 * PHP5 object constructor.
+
